@@ -6,7 +6,7 @@
   "scripts": {
     "start:dev": "nodemon ./src/index.ts",
     "start:prod": "tsc && node ./dist/index.js",
-    "test": "jest --forceExit"
+    "test": "jest --forceExit --detectOpenHandles"
   },
   "author": "",
   "license": "ISC",

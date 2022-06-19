@@ -14,7 +14,7 @@ const getUserByid = async (_: IncomingMessage, res: ServerResponse, id: string) 
   const user = await User.findById(id);
 
   if (!user) {
-    sendResponse(res, HttpStatusCode.NOT_FOUND, HeadersPreset.ProblemJSON, Message.InvalidId);
+    sendResponse(res, HttpStatusCode.NOT_FOUND, HeadersPreset.ProblemJSON, Message.UserNotFound);
   } else {
     sendResponse(res, HttpStatusCode.OK, HeadersPreset.JSON, user);
   }
