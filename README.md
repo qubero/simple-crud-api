@@ -27,5 +27,3 @@ Body of POST, PUT and PATCH object must have JSON body with:
   - username — user's name (string, required)
   - age — user's age (number, required)
   - hobbies — user's hobbies (array of strings or empty array, required)
-
-PLEASE CHECK PR FOR MORE INFO
